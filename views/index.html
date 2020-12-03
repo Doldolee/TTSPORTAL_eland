@@ -18,8 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+    
      <!-- Sidebar -->
-     <div class="sidebar-fixed position-fixed" style="margin: 0.5rem 0 0 0.5rem;">
+     <div id="sidebar-wrapper" class="sidebar-fixed position-fixed" style="margin: 0.5rem 0 0 0.5rem;">
 
         <div class="card-header"style="width:25vw;">매장명</div>   
   
@@ -31,6 +32,7 @@
         </div>
   
       </div>
+   
       <!-- Sidebar -->
 
         <!--Main layout-->
@@ -53,7 +55,7 @@
                     <div class="card-body">
 
                     <!--Google map-->
-                    <div id="map-container" class="map-container" style="height: 25vh">
+                    <div id="map-container" class="map-container1" style="height: 25vh">
                         
                     </div>
 
@@ -91,13 +93,14 @@
     
                         <!-- Card header -->
                         <div class="card-header" >홈페이지</div>
+                        <button onclick="click1()">리로드</button>
     
                         <!--Card content-->
                         <div class="card-body">
     
                         <!--Google map-->
                         <div id="map-container" class="map-container" style="height: 45.8vh">
-                            <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                            <iframe id="control_iframe" src="http://tts.wantreez.com/w01/dashboard.html" frameborder="0"
                             style="border:0" allowfullscreen></iframe>
                         </div>
     
